@@ -17,5 +17,5 @@ qmk compile -kb ktec/ergodone -km my_keymap
 - Press 2 keys on left part of keyboard (in upper row two on far right) with at the same time connect cable to make keyboard ready to update firmware. 
 - Update firmware with
 ```
-sudo ./bin/hid_bootloader_cli -mmcu=atmega32u4 ~/qmk_firmware/ktec_ergodone_my_keymap.hex
+sudo ./bin/hid_bootloader_cli -w -mmcu=atmega32u4 ../firmware.hex
 ```
