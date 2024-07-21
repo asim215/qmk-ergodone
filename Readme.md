@@ -26,5 +26,6 @@ qmk config user.keyboard=ktec/ergodone
 qmk new-keymap
 qmk config compile.keymap=engram
 qmk compile -c ergodone_80.json
+qmk compile -c -j 0 ergodone_80.json
 sudo ./bin/hid_bootloader_cli -w -mmcu=atmega32u4 ../ktec_ergodone_ktec_ergodone_engram.hex
 ```
